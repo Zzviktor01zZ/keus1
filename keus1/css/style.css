@@ -1,0 +1,379 @@
+html{
+background: url("../image/fon.png")/* путь к файлу */
+no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+}
+
+
+
+body {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family:   ""; 
+    
+}
+
+
+h1, h1, h3, h4, H5, H6{
+    margin: 0; /*отступы*/
+}
+
+p{
+    margin: 0 0 10px;
+}
+
+*,
+*:before
+*:after{
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.header{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.header.green{
+    background-color: #7f7fa5;
+    width: 100%;
+    height: 20%;
+}
+
+
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0;
+    
+}
+
+.nav{
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child{
+    margin-left: 0;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/*.h1{
+    color: aliceblue;
+}*/
+
+
+.intro {
+    display: flex;
+    flex-direction: column; /*каждый новый элемент в блоке буден начинаться с новой строки*/
+    justify-content: center;/*выравнивание ячейки по центру блока (по вертикали)*/
+    height: 750px;
+    padding: 100px;
+    background-color: #333;  
+}
+
+.intro__inner {
+    width: 100%;
+    min-width: 970px;/*максимальная ширина*/
+    margin: 0 auto;/*выравнивание по сентру*/
+    text-align: center;
+
+}
+
+.intro__title {
+    margin: 0 0 35px;
+    font-size: 65px;
+    line-height: 1.1; /*межстрочный отступ*/
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro__suptitle {
+    margin-bottom: 60px;
+    font-size: 33px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/*Кнопка*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+   
+}
+
+.btn--red {
+    background-color: rgb(42, 82, 23);
+}
+
+.ys {
+    display: flex;
+    margin: 100px 0;
+}
+
+.ys__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px; /* расстояние меджу элементами */
+}
+
+.ys__icon {
+    margin-bottom: 20px; /*отступ вниз*/
+
+}
+
+.ys__title {
+    margin-bottom: 15px; /*отделение заголовка от текста*/
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.ys__text {
+    font-size: 19px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+
+.h1 {
+    display: flex;
+    margin: 100px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+footer {
+    
+    justify-content: center;
+    padding: 50px;
+    background-color: #CD9575;
+    
+}
+
+.seti{
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+	color: #e42929;
+	font-weight: bold;
+	text-decoration: none;
+	/*настройка цвета текста*/
+}
+
+p {
+	margin: 10px 0;
+
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	/*Распологая стоки друг под другом */
+}
+
+input {
+	margin: 10px;
+	padding: 10px;
+	border: unset;
+	border-bottom: 2px solid #e3e3e3;
+	outline: none;
+/*увеличивает отступ между стоками*/
+}
+
+button {
+	padding: 10px;
+	background: yellow;
+	border: unset;
+	cursor: pointer; 
+	/*настройка кнопки*/
+}
+
+.msg {
+	border: 2px solid #ffa908;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold; 
+	/*Выводит тест об успешной аторизации*/
+}
+
+.logout {
+	color: #b7625c;
+	/*Выыодит текст об ошибки авторизации*/
+}
+
+.label {
+    color: #fff;
+}
+
+.reg {
+    display: flex;
+    margin: 50px 1290px;
+    text-align: center;
+}
+
+
+
+
+.on {
+    color: green;
+}
+
+.off {
+    color: red;
+}
+
+
+
+.gg {
+    color: rgb(2, 0, 0);
+}
+
+
+@media screen and (max-width: 720px ) {
+    .ys {
+        display: flex;
+        margin: 100px 0;
+    }
+    
+    .ys__item {
+        width: 33.33333%;
+        text-align: center;
+        padding: 0 40px; /* расстояние меджу элементами */
+    }
+    
+    .ys__icon {
+        margin-bottom: 20px; /*отступ вниз*/
+    
+    }
+    
+    .ys__title {
+        margin-bottom: 15px; /*отделение заголовка от текста*/
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+    }
+    
+    .ys__text {
+        font-size: 19px;
+        line-height: 1.5;
+        color: rgb(0, 0, 0);
+    } 
+}
+
+
+
+
+
+/* Кнопка читать далее */
+
+
+.read-more-state {
+    display: none;
+    }
+     
+    .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+    }
+     
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    }
+     
+    .read-more-state ~ .read-more-trigger:before {
+    content: 'Читать далее';
+    }
+     
+    .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Показывать меньше';
+    }
+     
+    .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: rgb(32, 29, 29);
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    }
+
+
+
+
+
+
+
+
+    .img {
+        background-position: center;/* позиция картинки */
+    }
+
+
+
+    
